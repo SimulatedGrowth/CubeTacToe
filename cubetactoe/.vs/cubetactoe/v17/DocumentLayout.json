@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe\\assets\\scenes\\scripts\\cubemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\cubemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CubeMap.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\CubeMap.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\CubeMap.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\CubeMap.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\CubeMap.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwB0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T00:13:31.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CubeState.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\CubeState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\CubeState.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\CubeState.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\CubeState.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T00:02:22.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReadCube.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\ReadCube.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\ReadCube.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\ReadCube.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\ReadCube.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T23:57:53.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RotateBigCube.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\RotateBigCube.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\RotateBigCube.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\RotateBigCube.cs",
+              "RelativeToolTip": "Assets\\Scenes\\Scripts\\RotateBigCube.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAQwHQAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T22:49:01.772Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 88,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
