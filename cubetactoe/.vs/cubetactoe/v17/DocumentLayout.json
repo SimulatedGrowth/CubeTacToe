@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\selectface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe\\assets\\scenes\\scripts\\selectface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\selectface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe\\assets\\scenes\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\cubemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\cubemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\assets\\scenes\\scripts\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9337317-4C62-F755-CFA8-4E2E3FA11AF4}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\scripts\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,17 +34,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PivotRotation.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\PivotRotation.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\PivotRotation.cs",
               "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\PivotRotation.cs",
               "RelativeToolTip": "Assets\\Scenes\\Scripts\\PivotRotation.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAgwCcAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T03:16:56.323Z",
               "EditorCaption": ""
@@ -64,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CubeMap.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\CubeMap.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\CubeMap.cs",
@@ -83,14 +83,14 @@
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\CubeState.cs",
               "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\CubeState.cs",
               "RelativeToolTip": "Assets\\Scenes\\Scripts\\CubeState.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T02:10:52.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "ReadCube.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\ReadCube.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\ReadCube.cs",
@@ -98,12 +98,11 @@
               "RelativeToolTip": "Assets\\Scenes\\Scripts\\ReadCube.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAawC0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T23:57:53.442Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-25T23:57:53.442Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "RotateBigCube.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\cubetactoe\\Assets\\Scenes\\Scripts\\RotateBigCube.cs",
               "RelativeDocumentMoniker": "Assets\\Scenes\\Scripts\\RotateBigCube.cs",
