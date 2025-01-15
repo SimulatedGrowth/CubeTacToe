@@ -1,0 +1,216 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\kociemba\\k_coordcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\kociemba\\k_coordcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\kociemba\\k_cubiecube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\kociemba\\k_cubiecube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\warningpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\warningpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\solvetwophase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\solvetwophase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\selectface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\selectface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\readcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\cubemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\cubemap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\automate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\automate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "K_CoordCube.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Kociemba\\K_CoordCube.cs",
+              "RelativeDocumentMoniker": "Assets\\Kociemba\\K_CoordCube.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Kociemba\\K_CoordCube.cs",
+              "RelativeToolTip": "Assets\\Kociemba\\K_CoordCube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:26:35.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "K_CubieCube.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Kociemba\\K_CubieCube.cs",
+              "RelativeDocumentMoniker": "Assets\\Kociemba\\K_CubieCube.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Kociemba\\K_CubieCube.cs",
+              "RelativeToolTip": "Assets\\Kociemba\\K_CubieCube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:26:18.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WarningPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\WarningPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\WarningPanel.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\WarningPanel.cs",
+              "RelativeToolTip": "Assets\\WarningPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:22:27.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SolveTwoPhase.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\SolveTwoPhase.cs",
+              "RelativeDocumentMoniker": "Assets\\SolveTwoPhase.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\SolveTwoPhase.cs",
+              "RelativeToolTip": "Assets\\SolveTwoPhase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:22:04.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SelectFace.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\SelectFace.cs",
+              "RelativeDocumentMoniker": "Assets\\SelectFace.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\SelectFace.cs",
+              "RelativeToolTip": "Assets\\SelectFace.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:21:55.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RotateBigCube.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\RotateBigCube.cs",
+              "RelativeDocumentMoniker": "Assets\\RotateBigCube.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\RotateBigCube.cs",
+              "RelativeToolTip": "Assets\\RotateBigCube.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:21:46.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReadCube.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\ReadCube.cs",
+              "RelativeDocumentMoniker": "Assets\\ReadCube.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\ReadCube.cs",
+              "RelativeToolTip": "Assets\\ReadCube.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwDAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:21:27.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PivotRotation.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\PivotRotation.cs",
+              "RelativeDocumentMoniker": "Assets\\PivotRotation.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\PivotRotation.cs",
+              "RelativeToolTip": "Assets\\PivotRotation.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAuwBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:21:11.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CubeState.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\CubeState.cs",
+              "RelativeDocumentMoniker": "Assets\\CubeState.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\CubeState.cs",
+              "RelativeToolTip": "Assets\\CubeState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:20:58.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CubeMap.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\CubeMap.cs",
+              "RelativeDocumentMoniker": "Assets\\CubeMap.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\CubeMap.cs",
+              "RelativeToolTip": "Assets\\CubeMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:20:47.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Automate.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Automate.cs",
+              "RelativeDocumentMoniker": "Assets\\Automate.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Automate.cs",
+              "RelativeToolTip": "Assets\\Automate.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwBQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T02:19:49.608Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 88,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
