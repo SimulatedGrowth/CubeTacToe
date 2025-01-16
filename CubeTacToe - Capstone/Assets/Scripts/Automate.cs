@@ -26,10 +26,10 @@ public class Automate : MonoBehaviour
     {
         if (moveList.Count > 0  && !CubeState.autoRotating && CubeState.started)
         {
-            //Do the move at the first index;
+            //do the move at the first index;
             DoMove(moveList[0]);
 
-            // remove the move at the first index
+            //remove the move at the first index
             moveList.Remove(moveList[0]);
         }
     }
