@@ -1,31 +1,28 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
 
 public class RoundManager : MonoBehaviour
 {
-    public static RoundManager Instance; // Singleton to access from other scripts
+    public static RoundManager Instance { get; private set; } 
 
     public TMP_Text timerText;
     public TMP_Text turnText;
     public float turnTime = 60f;
+
     private float timeLeft;
     private static bool isPlayerTurn = true;
-
-    private List<Button> availableButtons = new List<Button>();
+    private ActivateImage activateImageScript;
 
     void Awake()
     {
-        if (Instance == null)
-            Instance = this;
-        else
-            Destroy(gameObject);
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
     void Start()
     {
+        activateImageScript = FindObjectOfType<ActivateImage>();
         StartCoroutine(RoundTimer());
         UpdateUI();
     }
@@ -38,57 +35,41 @@ public class RoundManager : MonoBehaviour
 
             while (timeLeft > 0)
             {
-                timeLeft -= Time.deltaTime;
-                timerText.text = "Time Left: " + Mathf.Ceil(timeLeft).ToString() + "s";
+                if (isPlayerTurn)
+                {
+                    timeLeft -= Time.deltaTime;
+                    timerText.text = "Time Left: " + Mathf.Ceil(timeLeft).ToString() + "s";
+                }
                 yield return null;
             }
 
-            EndTurn();
+            
+            if (isPlayerTurn) EndTurn();
         }
     }
 
-    public void EndTurn()
+    public static void EndTurn()
     {
         isPlayerTurn = !isPlayerTurn;
-        UpdateUI();
+        Instance.UpdateUI();
 
         if (!isPlayerTurn)
         {
-            Invoke("AITurn", 1f); // Delay AI move
+            Instance.Invoke("AITurn", 1f); 
         }
     }
 
     private void AITurn()
     {
-        availableButtons.Clear();
-
-        Button[] allButtons = FindObjectsOfType<Button>();
-        foreach (Button btn in allButtons)
+        if (activateImageScript != null)
         {
-            if (btn.interactable)
-            {
-                availableButtons.Add(btn);
-            }
+            activateImageScript.AITurn();
         }
-
-        if (availableButtons.Count == 0)
-        {
-            Debug.Log("No available buttons left.");
-            return;
-        }
-
-        // AI selects a random available button
-        Button aiButton = availableButtons[Random.Range(0, availableButtons.Count)];
-        aiButton.onClick.Invoke(); // Simulate AI clicking
-
-        Debug.Log("AI clicked a button.");
-
-        EndTurn();
     }
 
     private void UpdateUI()
     {
-        turnText.text = isPlayerTurn ? "Player 1 Turn" : "Player 2 Turn";
+        turnText.text = isPlayerTurn ? "Player 1 Turn" : "AI Turn";
     }
 
     public static bool GetIsPlayerTurn()

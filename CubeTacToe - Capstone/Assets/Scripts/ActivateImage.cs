@@ -1,87 +1,97 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ActivateImage : MonoBehaviour
 {
-    public GameObject buttonPrefab; // Prefab for the button (with X and O images)
-    public Transform[] buttonPositions;  // Array of Transforms that will hold the positions (from the scene)
+    public GameObject buttonPrefab;
+    public Transform[] buttonPositions;
 
     public enum PlayerRole { None, X, O }
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
 
-    private Button[] buttons; // Array to store button instances
+    private Button[] buttons;
+    private List<Button> availableButtons = new List<Button>();
 
     void Start()
     {
-        // Determine the first role randomly
+        
         if (firstAssignedRole == PlayerRole.None)
         {
             firstAssignedRole = (Random.value > 0.5f) ? PlayerRole.X : PlayerRole.O;
         }
 
-        AssignRole(firstAssignedRole == PlayerRole.X ? PlayerRole.O : PlayerRole.X);
+        AssignRole(firstAssignedRole);
+        buttons = new Button[buttonPositions.Length];
 
-        // Instantiate buttons at the start and set up listeners
-        buttons = new Button[buttonPositions.Length]; // Initialize the buttons array
         for (int i = 0; i < buttonPositions.Length; i++)
         {
-            // Instantiate the button prefab at the correct position
             GameObject newButton = Instantiate(buttonPrefab, buttonPositions[i].position, buttonPositions[i].rotation);
+            newButton.transform.SetParent(buttonPositions[i], true);
 
-            // Parent the new button to the corresponding empty GameObject (keeps buttons moving with the cube)
-            newButton.transform.SetParent(buttonPositions[i], true); // "true" keeps world space position
+            Button btn = newButton.GetComponent<Button>();
+            buttons[i] = btn;
+            availableButtons.Add(btn);
 
-            // Assign the button reference in the buttons array
-            buttons[i] = newButton.GetComponent<Button>();
-
-            // Set up the OnClick listener for the button
-            int index = i; // To avoid closure issues in the lambda
-            buttons[i].onClick.AddListener(() => OnClick(index));
+            int index = i;
+            btn.onClick.AddListener(() => OnClick(index));
         }
     }
 
-    // Assign a new role to the player
     public void AssignRole(PlayerRole role)
     {
         assignedRole = role;
     }
 
-    // This method will be called when the button is clicked
     public void OnClick(int positionIndex)
     {
-        // Get the Image components for X and O images
-        Image[] images = buttons[positionIndex].GetComponentsInChildren<Image>();
+        if (!RoundManager.GetIsPlayerTurn()) return;
 
-        // Find the X and O images in the button
-        Image imageX = null;
-        Image imageO = null;
+        Button clickedButton = buttons[positionIndex];
+        if (!availableButtons.Contains(clickedButton)) return; 
+
+        ShowImage(clickedButton, assignedRole);
+        availableButtons.Remove(clickedButton);
+
+        RoundManager.EndTurn();
+    }
+
+    public void AITurn()
+    {
+        if (availableButtons.Count == 0) return; 
+
+        int randomIndex = Random.Range(0, availableButtons.Count);
+        Button aiButton = availableButtons[randomIndex];
+
+        ShowImage(aiButton, assignedRole == PlayerRole.X ? PlayerRole.O : PlayerRole.X);
+        availableButtons.Remove(aiButton);
+
+        RoundManager.EndTurn();
+    }
+
+    private void ShowImage(Button button, PlayerRole role)
+    {
+        Image[] images = button.GetComponentsInChildren<Image>();
+        Image imageX = null, imageO = null;
 
         foreach (var img in images)
         {
-            if (img.name == "X") // Ensure the X image has the correct name in the prefab
-            {
-                imageX = img;
-            }
-            else if (img.name == "O") // Ensure the O image has the correct name in the prefab
-            {
-                imageO = img;
-            }
+            if (img.name == "X") imageX = img;
+            if (img.name == "O") imageO = img;
         }
 
-        // Show the image for the assigned role and hide the other
-        if (assignedRole == PlayerRole.X)
+        if (role == PlayerRole.X)
         {
             imageX.enabled = true;
             imageO.enabled = false;
         }
-        else if (assignedRole == PlayerRole.O)
+        else
         {
             imageX.enabled = false;
             imageO.enabled = true;
         }
 
-        // Disable the button after it's clicked (optional, if you want to prevent multiple clicks)
-        buttons[positionIndex].interactable = false;
+        button.enabled = false;
     }
 }
