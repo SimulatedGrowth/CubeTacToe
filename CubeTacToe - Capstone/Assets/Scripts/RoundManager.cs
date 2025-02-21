@@ -4,7 +4,7 @@ using System.Collections;
 
 public class RoundManager : MonoBehaviour
 {
-    public static RoundManager Instance { get; private set; } 
+    public static RoundManager Instance { get; private set; }
 
     public TMP_Text timerText;
     public TMP_Text turnText;
@@ -22,15 +22,17 @@ public class RoundManager : MonoBehaviour
 
     void Start()
     {
-        activateImageScript = FindObjectOfType<ActivateImage>();
+        activateImageScript = FindAnyObjectByType<ActivateImage>();
         StartCoroutine(RoundTimer());
         UpdateUI();
+        ResetTimer();
     }
 
     private IEnumerator RoundTimer()
     {
         while (true)
         {
+
             timeLeft = turnTime;
 
             while (timeLeft > 0)
@@ -43,19 +45,20 @@ public class RoundManager : MonoBehaviour
                 yield return null;
             }
 
-            
-            if (isPlayerTurn) EndTurn();
+            if (isPlayerTurn) EndTurn(); 
         }
     }
 
     public static void EndTurn()
     {
         isPlayerTurn = !isPlayerTurn;
+
         Instance.UpdateUI();
+        Instance.ResetTimer();
 
         if (!isPlayerTurn)
         {
-            Instance.Invoke("AITurn", 1f); 
+            Instance.Invoke("AITurn", 2.5f); 
         }
     }
 
@@ -69,11 +72,17 @@ public class RoundManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        turnText.text = isPlayerTurn ? "Player 1 Turn" : "AI Turn";
+        turnText.text = isPlayerTurn ? "Player 1's Turn" : "AI's Turn";
     }
 
     public static bool GetIsPlayerTurn()
     {
         return isPlayerTurn;
+    }
+
+    private void ResetTimer()
+    {
+        timeLeft = turnTime;
+        timerText.text = "Time Left: " + Mathf.Ceil(timeLeft).ToString() + "s";
     }
 }
