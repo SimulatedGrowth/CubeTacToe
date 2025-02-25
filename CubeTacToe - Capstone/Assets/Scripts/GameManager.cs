@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -50,7 +51,10 @@ public class GameManager : MonoBehaviour
 
         UpdatePointsUI();
     }
-
+    public void restartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
     public void AssignRole(PlayerRole role)
     {
         assignedRole = role;
