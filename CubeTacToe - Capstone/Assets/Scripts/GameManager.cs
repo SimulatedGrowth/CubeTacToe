@@ -4,6 +4,7 @@ using TMPro;
 using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,8 +17,8 @@ public class GameManager : MonoBehaviour
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
 
-    private Button[] buttons;
-    private List<Button> availableButtons = new List<Button>();
+    private EventTrigger[] buttons;
+    private List<EventTrigger> availableButtons = new List<EventTrigger>();
     private GameObject[] buttonMarks;
 
     private HashSet<int> usedMarks = new HashSet<int>();
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
         }
 
         AssignRole(firstAssignedRole);
-        buttons = new Button[buttonPositions.Length];
+        buttons = new EventTrigger[buttonPositions.Length];
         buttonMarks = new GameObject[buttonPositions.Length];
 
         for (int i = 0; i < buttonPositions.Length; i++)
@@ -41,12 +42,13 @@ public class GameManager : MonoBehaviour
             GameObject newButton = Instantiate(buttonPrefab, buttonPositions[i].position, buttonPositions[i].rotation);
             newButton.transform.SetParent(buttonPositions[i], true);
 
-            Button btn = newButton.GetComponent<Button>();
+            EventTrigger btn = newButton.GetComponent<EventTrigger>();
             buttons[i] = btn;
             availableButtons.Add(btn);
 
             int index = i;
-            btn.onClick.AddListener(() => OnClick(index));
+            //btn.onClick.AddListener(() => OnClick(index));
+            //btn.OnPointerDown(PointerEventData (index));
         }
 
         UpdatePointsUI();
@@ -64,7 +66,7 @@ public class GameManager : MonoBehaviour
     {
         if (!RoundManager.GetIsPlayerTurn()) return;
 
-        Button clickedButton = buttons[positionIndex];
+        EventTrigger clickedButton = buttons[positionIndex];
         if (!availableButtons.Contains(clickedButton)) return;
 
         ShowImage(clickedButton, assignedRole);
@@ -74,13 +76,18 @@ public class GameManager : MonoBehaviour
         UpdatePointsUI();
         RoundManager.EndTurn();
     }
+    public void OnPointerUp()
+    {
+        CheckLineup();
+        UpdatePointsUI();
+    }
 
     public void AITurn()
     {
         if (availableButtons.Count == 0) return;
 
         int randomIndex = UnityEngine.Random.Range(0, availableButtons.Count);
-        Button aiButton = availableButtons[randomIndex];
+        EventTrigger aiButton = availableButtons[randomIndex];
 
         ShowImage(aiButton, assignedRole == PlayerRole.X ? PlayerRole.O : PlayerRole.X);
         availableButtons.Remove(aiButton);
@@ -90,7 +97,7 @@ public class GameManager : MonoBehaviour
         RoundManager.EndTurn();
     }
 
-    private void ShowImage(Button button, PlayerRole role)
+    private void ShowImage(EventTrigger button, PlayerRole role)
     {
         Image[] images = button.GetComponentsInChildren<Image>();
         Image imageX = null, imageO = null;
