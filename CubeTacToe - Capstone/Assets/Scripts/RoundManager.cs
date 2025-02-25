@@ -12,7 +12,7 @@ public class RoundManager : MonoBehaviour
 
     private float timeLeft;
     private static bool isPlayerTurn = true;
-    private ActivateImage activateImageScript;
+    private GameManager activateImageScript;
 
     void Awake()
     {
@@ -22,7 +22,7 @@ public class RoundManager : MonoBehaviour
 
     void Start()
     {
-        activateImageScript = FindAnyObjectByType<ActivateImage>();
+        activateImageScript = FindAnyObjectByType<GameManager>();
         StartCoroutine(RoundTimer());
         UpdateUI();
         ResetTimer();
@@ -58,7 +58,7 @@ public class RoundManager : MonoBehaviour
 
         if (!isPlayerTurn)
         {
-            Instance.Invoke("AITurn", 2.5f); 
+            Instance.Invoke("AITurn", 1.5f); 
         }
     }
 
