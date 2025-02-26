@@ -18,11 +18,13 @@ public class PivotRotation : MonoBehaviour
 
     private ReadCube readCube;
     private CubeState cubeState;
+    private GameManager gameManager; // Reference to GameManager
 
     void Start()
     {
         readCube = FindAnyObjectByType<ReadCube>();
         cubeState = FindAnyObjectByType<CubeState>();
+        gameManager = FindAnyObjectByType<GameManager>(); // Get reference to GameManager
     }
 
     void LateUpdate()
@@ -112,6 +114,10 @@ public class PivotRotation : MonoBehaviour
 
         targetQuaternion.eulerAngles = vec;
         autoRotating = true;
+
+        // Call CheckLineup and UpdatePointsUI after rotation adjustment
+        gameManager?.CheckLineup();
+        gameManager?.UpdatePointsUI();
     }
 
     private void AutoRotate()
@@ -128,6 +134,10 @@ public class PivotRotation : MonoBehaviour
             CubeState.autoRotating = false;
             autoRotating = false;
             dragging = false;
+
+            // Call CheckLineup and UpdatePointsUI after auto-rotation completes
+            gameManager?.CheckLineup();
+            gameManager?.UpdatePointsUI();
         }
     }
 }

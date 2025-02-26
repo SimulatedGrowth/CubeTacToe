@@ -4,7 +4,6 @@ using TMPro;
 using System.Collections.Generic;
 using System;
 using UnityEngine.SceneManagement;
-using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,8 +16,8 @@ public class GameManager : MonoBehaviour
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
 
-    private EventTrigger[] buttons;
-    private List<EventTrigger> availableButtons = new List<EventTrigger>();
+    private Button[] buttons;
+    private List<Button> availableButtons = new List<Button>();
     private GameObject[] buttonMarks;
 
     private HashSet<int> usedMarks = new HashSet<int>();
@@ -33,30 +32,31 @@ public class GameManager : MonoBehaviour
         }
 
         AssignRole(firstAssignedRole);
-        buttons = new EventTrigger[buttonPositions.Length];
+        buttons = new Button[buttonPositions.Length];
         buttonMarks = new GameObject[buttonPositions.Length];
 
         for (int i = 0; i < buttonPositions.Length; i++)
         {
-
             GameObject newButton = Instantiate(buttonPrefab, buttonPositions[i].position, buttonPositions[i].rotation);
             newButton.transform.SetParent(buttonPositions[i], true);
 
-            EventTrigger btn = newButton.GetComponent<EventTrigger>();
+            Button btn = newButton.GetComponent<Button>();
             buttons[i] = btn;
             availableButtons.Add(btn);
 
             int index = i;
-            //btn.onClick.AddListener(() => OnClick(index));
-            //btn.OnPointerDown(PointerEventData (index));
+            btn.onClick.AddListener(() => OnClick(index));
         }
 
         UpdatePointsUI();
     }
+
+
     public void restartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+
     public void AssignRole(PlayerRole role)
     {
         assignedRole = role;
@@ -66,20 +66,13 @@ public class GameManager : MonoBehaviour
     {
         if (!RoundManager.GetIsPlayerTurn()) return;
 
-        EventTrigger clickedButton = buttons[positionIndex];
+        Button clickedButton = buttons[positionIndex];
         if (!availableButtons.Contains(clickedButton)) return;
 
         ShowImage(clickedButton, assignedRole);
         availableButtons.Remove(clickedButton);
 
-        CheckLineup();
-        UpdatePointsUI();
         RoundManager.EndTurn();
-    }
-    public void OnPointerUp()
-    {
-        CheckLineup();
-        UpdatePointsUI();
     }
 
     public void AITurn()
@@ -87,17 +80,15 @@ public class GameManager : MonoBehaviour
         if (availableButtons.Count == 0) return;
 
         int randomIndex = UnityEngine.Random.Range(0, availableButtons.Count);
-        EventTrigger aiButton = availableButtons[randomIndex];
+        Button aiButton = availableButtons[randomIndex];
 
         ShowImage(aiButton, assignedRole == PlayerRole.X ? PlayerRole.O : PlayerRole.X);
         availableButtons.Remove(aiButton);
 
-        CheckLineup();
-        UpdatePointsUI();
         RoundManager.EndTurn();
     }
 
-    private void ShowImage(EventTrigger button, PlayerRole role)
+    private void ShowImage(Button button, PlayerRole role)
     {
         Image[] images = button.GetComponentsInChildren<Image>();
         Image imageX = null, imageO = null;
@@ -123,10 +114,10 @@ public class GameManager : MonoBehaviour
             buttonMarks[Array.IndexOf(buttons, button)] = imageO.gameObject;
         }
 
-        button.enabled = false;
+        button.interactable = false; // Disable button after selection
     }
 
-    private void CheckLineup()
+    public void CheckLineup()
     {
         List<int[]> winningCombinations = CalculateWinningCombinations();
         foreach (var combination in winningCombinations)
@@ -221,10 +212,9 @@ public class GameManager : MonoBehaviour
         if (image3 != null) image3.color = purplePink;
     }
 
-    private void UpdatePointsUI()
+    public void UpdatePointsUI()
     {
         playerPointsText.text = "Player Points: " + playerPoints.ToString();
         aiPointsText.text = "AI Points: " + aiPoints.ToString();
     }
-
 }
