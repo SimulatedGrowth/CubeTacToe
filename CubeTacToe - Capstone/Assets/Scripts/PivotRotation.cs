@@ -115,7 +115,6 @@ public class PivotRotation : MonoBehaviour
         targetQuaternion.eulerAngles = vec;
         autoRotating = true;
 
-        // Call CheckLineup and UpdatePointsUI after rotation adjustment
         gameManager?.CheckLineup();
         gameManager?.UpdatePointsUI();
     }
@@ -135,7 +134,6 @@ public class PivotRotation : MonoBehaviour
             autoRotating = false;
             dragging = false;
 
-            // Call CheckLineup and UpdatePointsUI after auto-rotation completes
             gameManager?.CheckLineup();
             gameManager?.UpdatePointsUI();
         }

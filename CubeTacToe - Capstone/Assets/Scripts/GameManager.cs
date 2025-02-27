@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
             btn.onClick.AddListener(() => OnClick(index));
         }
 
+        CheckLineup();
         UpdatePointsUI();
     }
 
@@ -73,19 +74,106 @@ public class GameManager : MonoBehaviour
         availableButtons.Remove(clickedButton);
 
         RoundManager.EndTurn();
+        CheckLineup();
+        UpdatePointsUI();
     }
 
     public void AITurn()
     {
         if (availableButtons.Count == 0) return;
 
+        PlayerRole aiRole = (assignedRole == PlayerRole.X) ? PlayerRole.O : PlayerRole.X;
+
+        int winIndex = GetStrategicMove(aiRole);
+        if (winIndex != -1)
+        {
+            PlaceAIChoice(winIndex, aiRole);
+            return;
+        }
+
+        int blockIndex = GetStrategicMove(assignedRole);
+        if (blockIndex != -1)
+        {
+            PlaceAIChoice(blockIndex, aiRole);
+            return;
+        }
+
+        int smartMoveIndex = GetBestMove(aiRole);
+        if (smartMoveIndex != -1)
+        {
+            PlaceAIChoice(smartMoveIndex, aiRole);
+            return;
+        }
+
         int randomIndex = UnityEngine.Random.Range(0, availableButtons.Count);
-        Button aiButton = availableButtons[randomIndex];
+        PlaceAIChoice(Array.IndexOf(buttons, availableButtons[randomIndex]), aiRole);
+    }
 
-        ShowImage(aiButton, assignedRole == PlayerRole.X ? PlayerRole.O : PlayerRole.X);
-        availableButtons.Remove(aiButton);
-
+    private void PlaceAIChoice(int index, PlayerRole role)
+    {
+        ShowImage(buttons[index], role);  // Show the mark on the button
+        availableButtons.Remove(buttons[index]);
         RoundManager.EndTurn();
+        CheckLineup();
+        UpdatePointsUI();
+  
+    }
+
+
+    private int GetStrategicMove(PlayerRole role)
+    {
+        foreach (var combo in CalculateWinningCombinations())
+        {
+            int emptySpot = -1;
+            int countRoleMarks = 0;
+
+            foreach (int i in combo)
+            {
+                if (buttonMarks[i] == null)
+                    emptySpot = i;
+                else if (buttonMarks[i].tag == (role == assignedRole ? "PlayerMark" : "AIMark"))
+                    countRoleMarks++;
+            }
+
+            if (countRoleMarks == 2 && emptySpot != -1)
+                return emptySpot;
+        }
+        return -1;
+    }
+
+    private int GetBestMove(PlayerRole role)
+    {
+        Dictionary<int, int> moveScores = new Dictionary<int, int>();
+
+        foreach (var combo in CalculateWinningCombinations())
+        {
+            foreach (int i in combo)
+            {
+                if (buttonMarks[i] == null)
+                {
+                    if (!moveScores.ContainsKey(i)) moveScores[i] = 0;
+                    moveScores[i] += 1;
+                }
+            }
+        }
+
+        if (moveScores.Count > 0)
+        {
+            int bestMove = -1;
+            int maxScore = -1;
+
+            foreach (var kvp in moveScores)
+            {
+                if (kvp.Value > maxScore)
+                {
+                    maxScore = kvp.Value;
+                    bestMove = kvp.Key;
+                }
+            }
+            return bestMove;
+        }
+
+        return -1;
     }
 
     private void ShowImage(Button button, PlayerRole role)
@@ -114,7 +202,7 @@ public class GameManager : MonoBehaviour
             buttonMarks[Array.IndexOf(buttons, button)] = imageO.gameObject;
         }
 
-        button.interactable = false; // Disable button after selection
+        button.interactable = false;
     }
 
     public void CheckLineup()

@@ -69,4 +69,7 @@ public class RotateBigCube : MonoBehaviour
             currentSwipe.Normalize();
         }
     }
+
+
+
 }
