@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatebigcube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pivotrotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\cubestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
@@ -64,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RotateBigCube.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\RotateBigCube.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RotateBigCube.cs",
@@ -72,12 +72,11 @@
               "RelativeToolTip": "Assets\\Scripts\\RotateBigCube.cs",
               "ViewState": "AgIAADgAAAAAAAAAAAAAwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T15:26:19.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T15:26:19.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PivotRotation.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\PivotRotation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PivotRotation.cs",
@@ -134,8 +133,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CubeState.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwCkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T15:26:14.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T15:26:14.464Z"
             },
             {
               "$type": "Document",

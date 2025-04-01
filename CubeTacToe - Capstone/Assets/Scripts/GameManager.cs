@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
 
     private void PlaceAIChoice(int index, PlayerRole role)
     {
-        ShowImage(buttons[index], role);  // Show the mark on the button
+        ShowImage(buttons[index], role);  
         availableButtons.Remove(buttons[index]);
         RoundManager.EndTurn();
         CheckLineup();
