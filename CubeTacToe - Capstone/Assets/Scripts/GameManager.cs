@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject buttonPrefab;
+    public GameObject endpanel;
+    
     public Transform[] buttonPositions;
     public TMP_Text playerPointsText;
     public TMP_Text aiPointsText;
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
     private HashSet<int> usedMarks = new HashSet<int>();
     private int playerPoints = 0;
     private int aiPoints = 0;
+    private int moves;
 
     void Start()
     {
@@ -48,6 +51,8 @@ public class GameManager : MonoBehaviour
             btn.onClick.AddListener(() => OnClick(index));
         }
 
+        moves = 0;
+        
         CheckLineup();
         UpdatePointsUI();
     }
@@ -56,6 +61,11 @@ public class GameManager : MonoBehaviour
     public void restartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void menuLevel()
+    {
+        SceneManager.LoadScene("StartScreen");
     }
 
     public void AssignRole(PlayerRole role)
@@ -76,11 +86,22 @@ public class GameManager : MonoBehaviour
         RoundManager.EndTurn();
         CheckLineup();
         UpdatePointsUI();
+
+        moves++;
+        if (moves>=(54/2) && availableButtons.Count == 0)
+        {
+            endpanel.SetActive(true);
+        }
     }
 
     public void AITurn()
     {
-        if (availableButtons.Count == 0) return;
+        if (availableButtons.Count == 0) 
+        {
+            
+                endpanel.SetActive(true);
+            
+        } //return;
 
         PlayerRole aiRole = (assignedRole == PlayerRole.X) ? PlayerRole.O : PlayerRole.X;
 
@@ -105,8 +126,12 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        
+
         int randomIndex = UnityEngine.Random.Range(0, availableButtons.Count);
         PlaceAIChoice(Array.IndexOf(buttons, availableButtons[randomIndex]), aiRole);
+
+        
     }
 
     private void PlaceAIChoice(int index, PlayerRole role)
