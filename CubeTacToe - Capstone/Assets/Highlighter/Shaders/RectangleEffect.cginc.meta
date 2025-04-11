@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6b439d49ffca3d144b7c019071ecbe12
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Shaders/RectangleEffect.cginc
+  uploadId: 642053

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 64d2c3f1b9015804a89583a046985865
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Shaders/LinearAlgebra.cginc
+  uploadId: 642053

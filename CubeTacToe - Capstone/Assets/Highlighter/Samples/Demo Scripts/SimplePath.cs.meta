@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 21fdf3ba0a49b3044a6edb41b10e151b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Samples/Demo Scripts/SimplePath.cs
+  uploadId: 642053

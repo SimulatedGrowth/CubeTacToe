@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 52720bbd54a55ca4fb9df4b4d71261d9
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Shaders/PixelatedCircleEffect.cginc
+  uploadId: 642053

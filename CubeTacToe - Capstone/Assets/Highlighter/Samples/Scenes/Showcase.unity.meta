@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3aafc261e7d94c746aaec12b8354b1a6
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Samples/Scenes/Showcase.unity
+  uploadId: 642053

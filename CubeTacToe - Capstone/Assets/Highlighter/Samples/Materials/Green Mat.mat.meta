@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c56c9a9f06d95644a9f8426a34fe21c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Samples/Materials/Green Mat.mat
+  uploadId: 642053

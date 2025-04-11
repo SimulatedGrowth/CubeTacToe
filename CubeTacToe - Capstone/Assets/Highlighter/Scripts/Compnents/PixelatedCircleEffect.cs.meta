@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 887d0ddcc2084da44852f3f2f1c14e74
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Scripts/Compnents/PixelatedCircleEffect.cs
+  uploadId: 642053

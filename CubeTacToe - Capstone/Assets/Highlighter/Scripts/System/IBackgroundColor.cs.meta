@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c136586daf6ed8f4ca930dc0a251b1b9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Scripts/System/IBackgroundColor.cs
+  uploadId: 642053

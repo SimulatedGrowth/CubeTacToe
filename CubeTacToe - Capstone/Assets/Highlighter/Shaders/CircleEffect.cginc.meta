@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a026a18438b9c9f4d98e5cf5d42f0099
+ShaderIncludeImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Shaders/CircleEffect.cginc
+  uploadId: 642053

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 56fdacdb43a274940ac6343bd4aae945
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Samples/Demo Scripts/LookAtHighlight.cs
+  uploadId: 642053

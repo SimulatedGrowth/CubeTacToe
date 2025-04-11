@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 42ac526e50775214d862f2f82c9f8891
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Prefabs/Highlighter Manager.prefab
+  uploadId: 642053

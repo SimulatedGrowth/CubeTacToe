@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 59f12aa5726f8c543ab1a426a358084b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Scripts/System/HighlighterManager.cs
+  uploadId: 642053

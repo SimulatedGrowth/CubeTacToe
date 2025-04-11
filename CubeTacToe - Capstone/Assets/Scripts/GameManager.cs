@@ -9,11 +9,11 @@ public class GameManager : MonoBehaviour
 {
     public GameObject buttonPrefab;
     public GameObject endpanel;
-    
+    public ParticleSystem highlightEffect;
     public Transform[] buttonPositions;
     public TMP_Text playerPointsText;
     public TMP_Text aiPointsText;
-
+ 
     public enum PlayerRole { None, X, O }
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     private int playerPoints = 0;
     private int aiPoints = 0;
     private int moves;
+
+    private int lastPlayerMarkIndex = -1;
+    private int lastAIMarkIndex = -1;
+    private ParticleSystem currentHighlightInstance;
 
     void Start()
     {
@@ -242,9 +246,32 @@ public class GameManager : MonoBehaviour
             buttonMarks[Array.IndexOf(buttons, button)] = imageO.gameObject;
         }
 
+        int idx = Array.IndexOf(buttons, button);
+        if (role == assignedRole)
+            lastPlayerMarkIndex = idx;
+        else
+            lastAIMarkIndex = idx;
+
+        HighlightLastMark(idx, role);
         button.interactable = false;
     }
+    private void HighlightLastMark(int index, PlayerRole role)
+    {
+        if (currentHighlightInstance != null)
+            Destroy(currentHighlightInstance.gameObject);
 
+        Button btn = buttons[index];
+        Transform markTransform = btn.transform;
+
+        currentHighlightInstance = Instantiate(highlightEffect, markTransform.position, Quaternion.identity);
+        currentHighlightInstance.transform.SetParent(markTransform);
+        currentHighlightInstance.transform.localPosition += Vector3.forward * 0.05f;
+
+        if (currentHighlightInstance != null && !currentHighlightInstance.isPlaying)
+        {
+            currentHighlightInstance.Play();
+        }
+    }
     public void CheckLineup()
     {
         List<int[]> winningCombinations = CalculateWinningCombinations();

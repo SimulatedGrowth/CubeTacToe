@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f2452a8d8cbdb4d44a17f7b1c22f88f5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Samples/Materials/Grid Board Mat.mat
+  uploadId: 642053

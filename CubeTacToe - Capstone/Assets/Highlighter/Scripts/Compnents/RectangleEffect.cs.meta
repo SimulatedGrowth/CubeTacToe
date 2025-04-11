@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fe63a0b9adebadb4a8b103320e472eab
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Scripts/Compnents/RectangleEffect.cs
+  uploadId: 642053

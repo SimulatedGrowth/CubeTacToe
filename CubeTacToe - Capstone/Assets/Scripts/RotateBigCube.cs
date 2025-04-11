@@ -7,11 +7,13 @@ public class RotateBigCube : MonoBehaviour
     private Vector3 previousMousePosition;
     private Vector3 mouseDelta;
     private float speed = 200f;
+    
 
     void Update()
     {
         HandleBackgroundRotation();
     }
+   
 
     void HandleBackgroundRotation()
     {
@@ -44,7 +46,6 @@ public class RotateBigCube : MonoBehaviour
             previousMousePosition = currentPos;
         }
 
-        // 3) On release, stop dragging
         if (Input.GetMouseButtonUp(0) ||
             (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
         {

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7a4f5ab889c28a248b7bdffc6c866059
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 276348
+  packageName: Highlighter Post-processing
+  packageVersion: 1.0
+  assetPath: Assets/Highlighter/Scripts/System/Core/Buffer.cs
+  uploadId: 642053
