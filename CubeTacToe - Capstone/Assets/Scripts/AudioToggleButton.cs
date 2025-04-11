@@ -7,6 +7,7 @@ public class AudioToggleButton : MonoBehaviour
     public Sprite mutedSprite;       
     public Image buttonImage;
     public GameObject howToPlayPanel;
+  
 
     private bool isMuted = false;
 
@@ -36,11 +37,13 @@ public class AudioToggleButton : MonoBehaviour
     public void ShowPanel()
     {
         howToPlayPanel.SetActive(true);
+        
     }
 
     public void HidePanel()
     {
         howToPlayPanel.SetActive(false);
+        
     }
 
     public void TogglePanel()

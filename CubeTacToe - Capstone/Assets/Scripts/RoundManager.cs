@@ -40,7 +40,7 @@ public class RoundManager : MonoBehaviour
                 if (isPlayerTurn)
                 {
                     timeLeft -= Time.deltaTime;
-                    timerText.text = "Time Left: " + Mathf.Ceil(timeLeft).ToString() + "s";
+                    timerText.text = Mathf.Ceil(timeLeft).ToString() + "s";
                 }
                 yield return null;
             }
@@ -60,7 +60,7 @@ public class RoundManager : MonoBehaviour
 
         if (!isPlayerTurn)
         {
-            Instance.Invoke("AITurn", 1.5f);
+            Instance.Invoke("AITurn", 2f);
         }
     }
 
@@ -85,6 +85,6 @@ public class RoundManager : MonoBehaviour
     private void ResetTimer()
     {
         timeLeft = turnTime;
-        timerText.text = "Time Left: " + Mathf.Ceil(timeLeft).ToString() + "s";
+        timerText.text = Mathf.Ceil(timeLeft).ToString() + "s";
     }
 }

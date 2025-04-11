@@ -369,7 +369,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdatePointsUI()
     {
-        playerPointsText.text = "Player Points: " + playerPoints.ToString();
-        aiPointsText.text = "AI Points: " + aiPoints.ToString();
+        playerPointsText.text = "Player: " + playerPoints.ToString();
+        aiPointsText.text = "AI: " + aiPoints.ToString();
     }
 }
