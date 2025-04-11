@@ -15,8 +15,7 @@ public class SelectFace : MonoBehaviour
 
     void Update()
     {
-        // Only allow interaction if not rotating already
-        if (Input.GetMouseButtonDown(0) && !CubeState.autoRotating)
+        if (Input.GetMouseButtonDown(0) && !CubeState.autoRotating && !InteractionState.hasRotatedThisTurn)
         {
             InteractionState.clickingOnCube = false;
 
@@ -44,6 +43,7 @@ public class SelectFace : MonoBehaviour
                         InteractionState.clickingOnCube = true;
                         cubeState.PickUp(cubeSide);
                         cubeSide[4].transform.parent.GetComponent<PivotRotation>().Rotate(cubeSide);
+                        InteractionState.hasRotatedThisTurn = true;
                         break;
                     }
                 }

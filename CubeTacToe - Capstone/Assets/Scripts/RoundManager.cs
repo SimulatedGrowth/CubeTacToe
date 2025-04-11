@@ -53,12 +53,14 @@ public class RoundManager : MonoBehaviour
     {
         isPlayerTurn = !isPlayerTurn;
 
+        InteractionState.hasRotatedThisTurn = false;
+
         Instance.UpdateUI();
         Instance.ResetTimer();
 
         if (!isPlayerTurn)
         {
-            Instance.Invoke("AITurn", 1.5f); 
+            Instance.Invoke("AITurn", 1.5f);
         }
     }
 
