@@ -18,13 +18,13 @@ public class PivotRotation : MonoBehaviour
 
     private ReadCube readCube;
     private CubeState cubeState;
-    private GameManager gameManager; // Reference to GameManager
+    private GameManager gameManager;
 
     void Start()
     {
         readCube = FindAnyObjectByType<ReadCube>();
         cubeState = FindAnyObjectByType<CubeState>();
-        gameManager = FindAnyObjectByType<GameManager>(); // Get reference to GameManager
+        gameManager = FindAnyObjectByType<GameManager>();
     }
 
     void LateUpdate()
@@ -47,8 +47,8 @@ public class PivotRotation : MonoBehaviour
     private void SpinSide(List<GameObject> side)
     {
         rotation = Vector3.zero;
-
         Vector2 offset = Vector2.zero;
+
         if (Input.touchCount > 0)
         {
             offset = (Input.GetTouch(0).position - new Vector2(mouseRef.x, mouseRef.y));
@@ -58,35 +58,18 @@ public class PivotRotation : MonoBehaviour
             offset = (Input.mousePosition - new Vector3(mouseRef.x, mouseRef.y, 0f));
         }
 
-        if (side == cubeState.up)
-        {
-            rotation.y = (offset.x + offset.y) * sensitivity * 1;
-        }
-        if (side == cubeState.down)
-        {
-            rotation.y = (offset.x + offset.y) * sensitivity * -1;
-        }
-        if (side == cubeState.left)
-        {
-            rotation.z = (offset.x + offset.y) * sensitivity * 1;
-        }
-        if (side == cubeState.right)
-        {
-            rotation.z = (offset.x + offset.y) * sensitivity * -1;
-        }
-        if (side == cubeState.front)
-        {
-            rotation.x = (offset.x + offset.y) * sensitivity * -1;
-        }
-        if (side == cubeState.back)
-        {
-            rotation.x = (offset.x + offset.y) * sensitivity * 1;
-        }
+        // Similar side handling logic for cube rotations
+        if (side == cubeState.up) rotation.y = (offset.x + offset.y) * sensitivity * 1;
+        if (side == cubeState.down) rotation.y = (offset.x + offset.y) * sensitivity * -1;
+        if (side == cubeState.left) rotation.z = (offset.x + offset.y) * sensitivity * 1;
+        if (side == cubeState.right) rotation.z = (offset.x + offset.y) * sensitivity * -1;
+        if (side == cubeState.front) rotation.x = (offset.x + offset.y) * sensitivity * -1;
+        if (side == cubeState.back) rotation.x = (offset.x + offset.y) * sensitivity * 1;
 
         transform.Rotate(rotation, Space.Self);
-
-        mouseRef = (Input.touchCount > 0) ? new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 0f) : Input.mousePosition;
+        mouseRef = Input.touchCount > 0 ? new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 0f) : Input.mousePosition;
     }
+
 
     public void Rotate(List<GameObject> side)
     {

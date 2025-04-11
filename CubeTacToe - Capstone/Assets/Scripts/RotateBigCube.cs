@@ -15,24 +15,38 @@ public class RotateBigCube : MonoBehaviour
 
     void HandleBackgroundRotation()
     {
-        // Start background drag only if the click started away from cube
-        if (Input.GetMouseButtonDown(0) && !InteractionState.clickingOnCube && !CubeState.autoRotating)
+        
+        if ((Input.GetMouseButtonDown(0) ||
+             (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
+            && !InteractionState.clickingOnCube
+            && !CubeState.autoRotating
+            && RoundManager.GetIsPlayerTurn())  
         {
             InteractionState.isDraggingBackground = true;
-            previousMousePosition = Input.mousePosition;
+            previousMousePosition = Input.touchCount > 0
+                ? (Vector2)Input.GetTouch(0).position
+                : (Vector2)Input.mousePosition;
         }
 
-        if (Input.GetMouseButton(0) && InteractionState.isDraggingBackground &&
-            !InteractionState.draggingSide && !CubeState.autoRotating)
+        if ((Input.GetMouseButton(0) ||
+             (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved))
+            && InteractionState.isDraggingBackground
+            && !InteractionState.draggingSide
+            && !CubeState.autoRotating)
         {
-            Vector3 currentMousePosition = Input.mousePosition;
-            mouseDelta = currentMousePosition - previousMousePosition;
+            Vector3 currentPos = Input.touchCount > 0
+                ? (Vector2)Input.GetTouch(0).position
+                : Input.mousePosition;
+
+            mouseDelta = currentPos - previousMousePosition;
             mouseDelta *= 0.1f;
             transform.rotation = Quaternion.Euler(mouseDelta.y, -mouseDelta.x, 0) * transform.rotation;
-            previousMousePosition = currentMousePosition;
+            previousMousePosition = currentPos;
         }
 
-        if (Input.GetMouseButtonUp(0))
+        // 3) On release, stop dragging
+        if (Input.GetMouseButtonUp(0) ||
+            (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
         {
             InteractionState.isDraggingBackground = false;
         }

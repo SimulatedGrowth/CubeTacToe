@@ -15,17 +15,28 @@ public class SelectFace : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !CubeState.autoRotating && !InteractionState.hasRotatedThisTurn)
-        {
-            InteractionState.clickingOnCube = false;
+        
+        InteractionState.clickingOnCube = false;
 
+       
+        if ((Input.GetMouseButtonDown(0) ||
+             (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
+            && !CubeState.autoRotating
+            && !InteractionState.hasRotatedThisTurn
+            && RoundManager.GetIsPlayerTurn())
+        {
             readCube.ReadState();
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit, 100.0f, layerMask))
+            Vector3 inputPosition = Input.touchCount > 0
+                ? (Vector3)Input.GetTouch(0).position
+                : Input.mousePosition;
+
+            Ray ray = Camera.main.ScreenPointToRay(inputPosition);
+            if (Physics.Raycast(ray, out RaycastHit hit, 100f, layerMask))
             {
                 GameObject face = hit.collider.gameObject;
 
+                // all six sides
                 List<List<GameObject>> cubeSides = new List<List<GameObject>>()
                 {
                     cubeState.up,
@@ -36,14 +47,16 @@ public class SelectFace : MonoBehaviour
                     cubeState.back
                 };
 
-                foreach (List<GameObject> cubeSide in cubeSides)
+                foreach (var side in cubeSides)
                 {
-                    if (cubeSide.Contains(face))
+                    if (side.Contains(face))
                     {
-                        InteractionState.clickingOnCube = true;
-                        cubeState.PickUp(cubeSide);
-                        cubeSide[4].transform.parent.GetComponent<PivotRotation>().Rotate(cubeSide);
-                        InteractionState.hasRotatedThisTurn = true;
+                        InteractionState.clickingOnCube = true;          // block background for this frame
+                        cubeState.PickUp(side);
+                        side[4].transform.parent
+                            .GetComponent<PivotRotation>()
+                            .Rotate(side);
+                        InteractionState.hasRotatedThisTurn = true;     // no more side‑rotations this turn
                         break;
                     }
                 }
