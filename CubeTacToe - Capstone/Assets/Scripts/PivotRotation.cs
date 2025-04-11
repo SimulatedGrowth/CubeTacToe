@@ -91,10 +91,15 @@ public class PivotRotation : MonoBehaviour
     public void Rotate(List<GameObject> side)
     {
         activeSide = side;
-        mouseRef = (Input.touchCount > 0) ? new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 0f) : Input.mousePosition;
+        mouseRef = (Input.touchCount > 0) ?
+            new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y, 0f)
+            : Input.mousePosition;
+
         dragging = true;
+        InteractionState.draggingSide = true; // set dragging
         localForward = Vector3.zero - side[4].transform.parent.transform.localPosition;
     }
+
 
     public void StartAutoRotate(List<GameObject> side, float angle)
     {
@@ -115,9 +120,11 @@ public class PivotRotation : MonoBehaviour
         targetQuaternion.eulerAngles = vec;
         autoRotating = true;
 
+        InteractionState.draggingSide = false; // 🔹 stop side dragging
         gameManager?.CheckLineup();
         gameManager?.UpdatePointsUI();
     }
+
 
     private void AutoRotate()
     {
@@ -133,9 +140,10 @@ public class PivotRotation : MonoBehaviour
             CubeState.autoRotating = false;
             autoRotating = false;
             dragging = false;
-
+            InteractionState.draggingSide = false; // reset
             gameManager?.CheckLineup();
             gameManager?.UpdatePointsUI();
         }
+
     }
 }

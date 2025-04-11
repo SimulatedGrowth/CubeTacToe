@@ -4,72 +4,37 @@ using UnityEngine;
 
 public class RotateBigCube : MonoBehaviour
 {
-    private Vector2 firstPressPos;
-    private Vector2 secondPressPos;
-    private Vector2 currentSwipe;
     private Vector3 previousMousePosition;
     private Vector3 mouseDelta;
     private float speed = 200f;
-    public GameObject target;
-
-    void Start() { }
 
     void Update()
     {
-        Swipe();
-        Drag();
+        HandleBackgroundRotation();
     }
 
-    void Drag()
+    void HandleBackgroundRotation()
     {
-        if (Input.GetMouseButton(1))
+        // Start background drag only if the click started away from cube
+        if (Input.GetMouseButtonDown(0) && !InteractionState.clickingOnCube && !CubeState.autoRotating)
         {
-            mouseDelta = Input.mousePosition - previousMousePosition;
+            InteractionState.isDraggingBackground = true;
+            previousMousePosition = Input.mousePosition;
+        }
+
+        if (Input.GetMouseButton(0) && InteractionState.isDraggingBackground &&
+            !InteractionState.draggingSide && !CubeState.autoRotating)
+        {
+            Vector3 currentMousePosition = Input.mousePosition;
+            mouseDelta = currentMousePosition - previousMousePosition;
             mouseDelta *= 0.1f;
             transform.rotation = Quaternion.Euler(mouseDelta.y, -mouseDelta.x, 0) * transform.rotation;
+            previousMousePosition = currentMousePosition;
         }
 
-        if (Input.touchCount > 0)
+        if (Input.GetMouseButtonUp(0))
         {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Moved)
-            {
-                Vector2 touchDelta = touch.deltaPosition;
-                touchDelta *= 0.1f;
-                transform.rotation = Quaternion.Euler(touchDelta.y, -touchDelta.x, 0) * transform.rotation;
-            }
-        }
-
-        previousMousePosition = Input.mousePosition;
-    }
-
-    void Swipe()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            firstPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-        }
-
-        if (Input.GetMouseButtonUp(1))
-        {
-            secondPressPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
-            currentSwipe.Normalize();
-        }
-
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            firstPressPos = Input.GetTouch(0).position;
-        }
-
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            secondPressPos = Input.GetTouch(0).position;
-            currentSwipe = new Vector2(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
-            currentSwipe.Normalize();
+            InteractionState.isDraggingBackground = false;
         }
     }
-
-
-
 }
