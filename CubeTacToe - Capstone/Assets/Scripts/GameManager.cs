@@ -52,7 +52,8 @@ public class GameManager : MonoBehaviour
         }
 
         moves = 0;
-        
+        endpanel.SetActive(false);
+
         CheckLineup();
         UpdatePointsUI();
     }
@@ -83,15 +84,18 @@ public class GameManager : MonoBehaviour
         ShowImage(clickedButton, assignedRole);
         availableButtons.Remove(clickedButton);
 
+        moves++;
+        if (moves >= (54) && availableButtons.Count == 0)
+        {
+            endpanel.SetActive(true);
+            return;
+        }
+
         RoundManager.EndTurn();
         CheckLineup();
         UpdatePointsUI();
 
-        moves++;
-        if (moves>=(54/2) && availableButtons.Count == 0)
-        {
-            endpanel.SetActive(true);
-        }
+        
     }
 
     public void AITurn()
@@ -100,6 +104,7 @@ public class GameManager : MonoBehaviour
         {
             
                 endpanel.SetActive(true);
+            return;
             
         } //return;
 
@@ -138,10 +143,20 @@ public class GameManager : MonoBehaviour
     {
         ShowImage(buttons[index], role);  
         availableButtons.Remove(buttons[index]);
+
+        
+
+        moves++;
+        if (moves >= (54) && availableButtons.Count == 0)
+        {
+            endpanel.SetActive(true);
+            return;
+        }
+
         RoundManager.EndTurn();
         CheckLineup();
         UpdatePointsUI();
-  
+
     }
 
 
