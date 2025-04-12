@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sceneloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\scripts\\gamemanagerpvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanagerpvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\roundmanagerpvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roundmanagerpvp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\roundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\roundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|c:\\users\\desktop\\documents\\github\\capstone\\cubetactoe - capstone\\assets\\scripts\\audiotogglebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\assets\\scripts\\audiotogglebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4530B49-7AA3-A611-C2C9-03A106CB9C07}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\audiotogglebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,17 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAkwD0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwFEAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T19:13:19.841Z",
               "IsPinned": true,
@@ -72,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "RoundManager.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\RoundManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RoundManager.cs",
@@ -81,12 +93,52 @@
               "ViewState": "AgIAACgAAAAAAAAAAAAkwD4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T18:03:06.559Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameManagerPvP.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\GameManagerPvP.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManagerPvP.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\GameManagerPvP.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManagerPvP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T17:50:23.962Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "RoundManagerPvP.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\RoundManagerPvP.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RoundManagerPvP.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\RoundManagerPvP.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RoundManagerPvP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T17:51:01.153Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SceneLoader.cs",
+              "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\SceneLoader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneLoader.cs",
+              "ToolTip": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\SceneLoader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T18:17:13.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "AudioToggleButton.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\AudioToggleButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AudioToggleButton.cs",
@@ -94,12 +146,11 @@
               "RelativeToolTip": "Assets\\Scripts\\AudioToggleButton.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T21:12:45.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T21:12:45.175Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "InteractionState.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\InteractionState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InteractionState.cs",
@@ -111,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "SelectFace.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\SelectFace.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SelectFace.cs",
@@ -123,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "RotateBigCube.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\RotateBigCube.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RotateBigCube.cs",
@@ -135,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "PivotRotation.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\PivotRotation.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PivotRotation.cs",
@@ -147,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "ReadCube.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\ReadCube.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ReadCube.cs",
@@ -159,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "CubeState.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\CubeState.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CubeState.cs",
@@ -171,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CubeMap.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\CubeMap.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CubeMap.cs",
@@ -183,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Automate.cs",
               "DocumentMoniker": "C:\\Users\\Desktop\\Documents\\GitHub\\Capstone\\CubeTacToe - Capstone\\Assets\\Scripts\\Automate.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Automate.cs",
