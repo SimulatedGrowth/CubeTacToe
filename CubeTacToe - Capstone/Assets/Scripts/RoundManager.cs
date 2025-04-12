@@ -60,7 +60,7 @@ public class RoundManager : MonoBehaviour
 
         if (!isPlayerTurn)
         {
-            Instance.Invoke("AITurn", 2f);
+            Instance.Invoke("AITurn", 1.7f);
         }
     }
 
@@ -74,7 +74,7 @@ public class RoundManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        turnText.text = isPlayerTurn ? "Player 1's Turn" : "AI's Turn";
+        turnText.text = isPlayerTurn ? "Player's Turn" : "AI's Turn";
     }
 
     public static bool GetIsPlayerTurn()

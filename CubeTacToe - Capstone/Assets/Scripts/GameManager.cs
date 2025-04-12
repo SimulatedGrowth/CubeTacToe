@@ -13,7 +13,10 @@ public class GameManager : MonoBehaviour
     public Transform[] buttonPositions;
     public TMP_Text playerPointsText;
     public TMP_Text aiPointsText;
- 
+    public TMP_Text playerPointsTextEnd;
+    public TMP_Text aiPointsTextEnd;
+    public TMP_Text winnerText;
+
     public enum PlayerRole { None, X, O }
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
@@ -62,6 +65,19 @@ public class GameManager : MonoBehaviour
         UpdatePointsUI();
     }
 
+    public void ShowEndPanel()
+    {
+        
+        playerPointsTextEnd.text = $"Player Score: {playerPoints}";
+        aiPointsTextEnd.text = $"AI Score: {aiPoints}";
+
+        if (playerPoints > aiPoints)
+            winnerText.text = "Player Wins!";
+        else if (playerPoints < aiPoints)
+            winnerText.text = "AI Wins!";
+        else
+            winnerText.text = "It's a Tie!";
+    }
 
     public void restartLevel()
     {
@@ -92,6 +108,7 @@ public class GameManager : MonoBehaviour
         if (moves >= (54) && availableButtons.Count == 0)
         {
             endpanel.SetActive(true);
+            ShowEndPanel();
             return;
         }
 
@@ -107,10 +124,11 @@ public class GameManager : MonoBehaviour
         if (availableButtons.Count == 0) 
         {
             
-                endpanel.SetActive(true);
+            endpanel.SetActive(true);
+            ShowEndPanel();
             return;
             
-        } //return;
+        } 
 
         PlayerRole aiRole = (assignedRole == PlayerRole.X) ? PlayerRole.O : PlayerRole.X;
 
@@ -154,6 +172,7 @@ public class GameManager : MonoBehaviour
         if (moves >= (54) && availableButtons.Count == 0)
         {
             endpanel.SetActive(true);
+            ShowEndPanel();
             return;
         }
 
