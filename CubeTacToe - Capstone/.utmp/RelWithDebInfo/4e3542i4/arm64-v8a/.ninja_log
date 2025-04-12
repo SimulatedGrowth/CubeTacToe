@@ -1,10 +1,19 @@
 # ninja log v5
 40	1167	7660948451996803	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9315a47812e3f71e
 23	1178	7660948452032145	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3198d2843f0b939c
-9	1204	7660948452389351	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e3633de17bcab9cd
-58	1209	7660948452424740	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	9847f570bf3a4247
 49	1285	7660948453206967	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dce2ef588286c48c
+9	1204	7660948452389351	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e3633de17bcab9cd
 15	1295	7660948453300691	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	c433081e09eba7e5
+58	1209	7660948452424740	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	9847f570bf3a4247
 31	1464	7660948455000953	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	958991b39a4eeae9
 1	1550	7660948455865880	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b4e630bb20e6a8d4
 1551	1670	7660948457092306	C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4e3542i4/obj/arm64-v8a/libgame.so	9986203d3f61d93b
+37	724	7662027161399890	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9315a47812e3f71e
+10	726	7662027161414955	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	3198d2843f0b939c
+21	741	7662027161583202	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	e3633de17bcab9cd
+46	744	7662027161608285	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	9847f570bf3a4247
+53	780	7662027161964526	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	dce2ef588286c48c
+15	782	7662027161979571	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	c433081e09eba7e5
+28	888	7662027163051005	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	958991b39a4eeae9
+3	947	7662027163611359	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	b4e630bb20e6a8d4
+947	1122	7662027165403003	C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/4e3542i4/obj/arm64-v8a/libgame.so	9986203d3f61d93b
