@@ -17,6 +17,8 @@ public class GameManager_PvP : MonoBehaviour
     public TMP_Text player2PointsTextEnd;
     public TMP_Text winnerText;
 
+    public AudioSource audio;
+
     public enum PlayerRole { None, X, O }
     private PlayerRole currentTurn = PlayerRole.X;
 
@@ -63,6 +65,8 @@ public class GameManager_PvP : MonoBehaviour
 
         ShowImage(clickedButton, currentTurn);
         availableButtons.Remove(clickedButton);
+
+        audio.Play();
 
         moves++;
         CheckLineup();

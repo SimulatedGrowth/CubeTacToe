@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
     public TMP_Text aiPointsTextEnd;
     public TMP_Text winnerText;
 
+    public AudioSource audio;
+
     public enum PlayerRole { None, X, O }
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
@@ -104,6 +106,8 @@ public class GameManager : MonoBehaviour
         ShowImage(clickedButton, assignedRole);
         availableButtons.Remove(clickedButton);
 
+        audio.Play();
+
         moves++;
         if (moves >= (54) && availableButtons.Count == 0)
         {
@@ -166,7 +170,7 @@ public class GameManager : MonoBehaviour
         ShowImage(buttons[index], role);  
         availableButtons.Remove(buttons[index]);
 
-        
+        audio.Play();
 
         moves++;
         if (moves >= (54) && availableButtons.Count == 0)
