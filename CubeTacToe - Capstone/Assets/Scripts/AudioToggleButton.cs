@@ -7,7 +7,8 @@ public class AudioToggleButton : MonoBehaviour
     public Sprite mutedSprite;       
     public Image buttonImage;
     public GameObject howToPlayPanel;
-  
+    public GameObject ChallengePanel;
+
 
     private bool isMuted = false;
 
@@ -49,5 +50,22 @@ public class AudioToggleButton : MonoBehaviour
     public void TogglePanel()
     {
         howToPlayPanel.SetActive(!howToPlayPanel.activeSelf);
+    }
+
+    public void CShowPanel()
+    {
+        ChallengePanel.SetActive(true);
+
+    }
+
+    public void CHidePanel()
+    {
+        ChallengePanel.SetActive(false);
+
+    }
+
+    public void CTogglePanel()
+    {
+        ChallengePanel.SetActive(!ChallengePanel.activeSelf);
     }
 }
