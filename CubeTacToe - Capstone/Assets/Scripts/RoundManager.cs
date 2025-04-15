@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class RoundManager : MonoBehaviour
 {
@@ -60,7 +61,16 @@ public class RoundManager : MonoBehaviour
 
         if (!isPlayerTurn)
         {
-            Instance.Invoke("AITurn", 1.7f);
+            string sceneName = SceneManager.GetActiveScene().name;
+
+            if (sceneName == "PvAI")
+            {
+                Instance.Invoke("AITurn", 1.7f);
+            }
+            if (sceneName == "PvB")
+            {
+                Instance.Invoke("AITurn", 0.5f);
+            }
         }
     }
 
