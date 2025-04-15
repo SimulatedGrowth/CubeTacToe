@@ -55,7 +55,6 @@ public class GameManager_PvP : MonoBehaviour
         endpanel.SetActive(false);
 
         UpdatePointsUI();
-        RoundManagerPvP.Instance.SetTurnText(currentTurn);
     }
 
     public void OnClick(int positionIndex)
@@ -79,9 +78,13 @@ public class GameManager_PvP : MonoBehaviour
             return;
         }
 
-        // Switch turn
+        RoundManager_PvP.Instance.EndTurn();
+
+    }
+    public void SwitchTurnManually()
+    {
         currentTurn = (currentTurn == PlayerRole.X) ? PlayerRole.O : PlayerRole.X;
-        RoundManagerPvP.Instance.SetTurnText(currentTurn);
+        RoundManager_PvP.Instance.SetTurnText(currentTurn);
     }
 
     private void ShowImage(Button button, PlayerRole role)

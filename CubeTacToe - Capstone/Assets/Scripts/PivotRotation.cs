@@ -103,7 +103,8 @@ public class PivotRotation : MonoBehaviour
         targetQuaternion.eulerAngles = vec;
         autoRotating = true;
 
-        InteractionState.draggingSide = false; // 🔹 stop side dragging
+        InteractionState.draggingSide = false; //  stop side dragging
+        InteractionState.hasRotatedThisTurn = true;
         gameManager?.CheckLineup();
         gameManager?.UpdatePointsUI();
     }
