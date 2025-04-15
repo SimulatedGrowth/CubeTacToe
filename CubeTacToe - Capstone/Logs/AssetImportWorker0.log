@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.40f1 (157d81624ddf) revision 1408385'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 32605 MB
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'en' Physical Memory: 32701 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\6000.0.40f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone
+C:/Users/mguas/Desktop/School/Capstone/CubeTacToe - Capstone
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58179
+49350
 -job-worker-count
-15
+5
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone
-C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone
+Successfully changed project path to: C:/Users/mguas/Desktop/School/Capstone/CubeTacToe - Capstone
+C:/Users/mguas/Desktop/School/Capstone/CubeTacToe - Capstone
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,13 +59,13 @@ C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [35508]  Target information:
+Player connection [968]  Target information:
 
-Player connection [35508]  * "[IP] 10.0.0.212 [Port] 0 [Flags] 2 [Guid] 3220034592 [EditorId] 3220034592 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-F2MASCH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [968]  * "[IP] 10.0.0.96 [Port] 0 [Flags] 2 [Guid] 2497856220 [EditorId] 2497856220 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ODRN1I0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [35508] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [35508] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 15
+Player connection [968] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [968] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -77,68 +77,66 @@ FMOD failed to set the software format to the custom sample rate 1, trying softw
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 9.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.40f1 (157d81624ddf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Desktop/Documents/GitHub/Capstone/CubeTacToe - Capstone/Assets
+[Subsystems] Discovering subsystems at path C:/Users/mguas/Desktop/School/Capstone/CubeTacToe - Capstone/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 4090 (ID=0x2684)
+    Renderer: NVIDIA GeForce RTX 2060 SUPER (ID=0x1f06)
     Vendor:   NVIDIA
-    VRAM:     24142 MB
-    Driver:   32.0.15.7247
+    VRAM:     8006 MB
+    Driver:   32.0.15.7260
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56680
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.40f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.002628 seconds.
-- Loaded All Assemblies, in  0.233 seconds
+Registered in 0.051025 seconds.
+- Loaded All Assemblies, in  1.608 seconds
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 148 ms
+Android Extension - Scanning For ADB Devices 2866 ms
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.369 seconds
-Domain Reload Profiling: 601ms
-	BeginReloadAssembly (78ms)
+- Finished resetting the current domain, in  3.839 seconds
+Domain Reload Profiling: 5397ms
+	BeginReloadAssembly (621ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (96ms)
-		LoadAssemblies (77ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (115ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (259ms)
+	LoadAllAssembliesAndSetupDomain (535ms)
+		LoadAssemblies (538ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (93ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (84ms)
+		AnalyzeDomain (524ms)
+			TypeCache.Refresh (522ms)
+				TypeCache.ScanAssembly (485ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (370ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (3840ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (350ms)
+		SetupLoadedEditorAssemblies (3748ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (215ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (70ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
+			InitializePlatformSupportModulesInManaged (3204ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (274ms)
+			ProcessInitializeOnLoadMethodAttributes (167ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -148,171 +146,54 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.428 seconds
-Refreshing native plugins compatible for Editor in 0.33 ms, found 3 plugins.
+- Loaded All Assemblies, in  3.155 seconds
+Refreshing native plugins compatible for Editor in 12.83 ms, found 3 plugins.
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.334 seconds
-Domain Reload Profiling: 761ms
-	BeginReloadAssembly (105ms)
+- Finished resetting the current domain, in  1.859 seconds
+Domain Reload Profiling: 4928ms
+	BeginReloadAssembly (676ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (270ms)
-		LoadAssemblies (210ms)
+		CreateAndSetChildDomain (58ms)
+	RebuildCommonClasses (119ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (200ms)
+	LoadAllAssembliesAndSetupDomain (2046ms)
+		LoadAssemblies (1843ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (122ms)
-			TypeCache.Refresh (98ms)
-				TypeCache.ScanAssembly (86ms)
-			BuildScriptInfoCaches (17ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (335ms)
+		AnalyzeDomain (669ms)
+			TypeCache.Refresh (560ms)
+				TypeCache.ScanAssembly (502ms)
+			BuildScriptInfoCaches (80ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (1860ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (268ms)
+		SetupLoadedEditorAssemblies (1597ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (173ms)
-			ProcessInitializeOnLoadMethodAttributes (13ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (57ms)
+			SetLoadedEditorAssemblies (17ms)
+			BeforeProcessingInitializeOnLoad (753ms)
+			ProcessInitializeOnLoadAttributes (616ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
+			AfterProcessingInitializeOnLoad (102ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (3ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Refreshing native plugins compatible for Editor in 8.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 22 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3414 unused Assets / (1.0 MB). Loaded Objects now: 3921.
-Memory consumption went from 97.3 MB to 96.3 MB.
-Total: 3.348200 ms (FindLiveObjects: 0.220800 ms CreateObjectMapping: 0.116200 ms MarkObjects: 2.448300 ms  DeleteObjects: 0.562300 ms)
+Unloading 3414 unused Assets / (0.9 MB). Loaded Objects now: 3903.
+Memory consumption went from 86.4 MB to 85.5 MB.
+Total: 11.311600 ms (FindLiveObjects: 0.893700 ms CreateObjectMapping: 0.760800 ms MarkObjects: 7.954600 ms  DeleteObjects: 1.700800 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 39445.506538 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ab683adfc7588dc81f513e0cce661b6') in 0.0032622 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 127.715761 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '877193d3a5f9dc6c94ed9d95f88ab45b') in 0.0003894 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.564424 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e11e899cbea58eb0adf6b77d29ef2619') in 0.0003529 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.666547 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc8ccfc0660d03c1df4ac7e31064460f') in 0.0003592 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.421602 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0286529f060d973ef03f902bcb6ff497') in 0.0004342 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.109902 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3d9249ad49abbee0e14743d04d02b7d2') in 0.0003501 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.389391 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02d3f81a65fb5b580f44913f5904f451') in 0.0003591 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.491106 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9efc4756ee211c70b90227ce5b94b4c') in 0.0004101 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.958932 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a2f205e36e132e24c688d3e3387eab3') in 0.0003533 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.609977 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6f3dc434b657a6859586338383e3d149') in 0.0003434 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.752013 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b5b2c7aa1e0394ab5788229a9f6d87e') in 0.0003827 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.736204 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ca9b806b3f6259c99da90f9e16e37bb') in 0.0003887 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.003670 seconds.
-  path: Assets/Scenes/PvP.unity
-  artifactKey: Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvP.unity using Guid(4dcea18e7b9ab454d8ec918cd1547560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b5e8dad5b727940c708c6597af06033') in 0.0003487 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.119550 seconds.
-  path: Assets/Scenes/PvAI.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/PvAI.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '527368bd930d5c34b4f76d9663a36350') in 0.0003461 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.591031 seconds.
-  path: Assets/Scenes/StartScreen.unity
-  artifactKey: Guid(8632d146ca977414f98abdbd4b103911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/StartScreen.unity using Guid(8632d146ca977414f98abdbd4b103911) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e540081432d94ffb64fd4391e6f6799c') in 0.0003511 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
