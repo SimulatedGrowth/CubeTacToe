@@ -8,8 +8,10 @@ public class AudioToggleButton : MonoBehaviour
     public Image buttonImage;
     public GameObject howToPlayPanel;
     public GameObject ChallengePanel;
+    public Animator animator;
+    public string animationTrigger = "Click";
 
-
+    private bool hasPlayed = false;
     private bool isMuted = false;
 
     private void Start()
@@ -18,7 +20,22 @@ public class AudioToggleButton : MonoBehaviour
         isMuted = AudioListener.volume == 0;
         UpdateButtonImage();
     }
-
+    public void TriggerMenu()
+    {
+        if (hasPlayed) return;
+        hasPlayed = true;
+        howToPlayPanel.SetActive(true);
+        animator.SetTrigger(animationTrigger);
+        
+    }
+    public void CloseMenu()
+    {
+        hasPlayed = false;
+        howToPlayPanel.SetActive(false);
+     
+        animator.Rebind();               
+        animator.Update(0f);
+    }
     public void ToggleSound()
     {
         isMuted = !isMuted;
