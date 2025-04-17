@@ -20,7 +20,7 @@ public class GameManager_PvP : MonoBehaviour
     public AudioSource audio;
 
     public enum PlayerRole { None, X, O }
-    private PlayerRole currentTurn = PlayerRole.X;
+    private static PlayerRole currentTurn = PlayerRole.X;
 
     private Button[] buttons;
     private List<Button> availableButtons = new List<Button>();
@@ -56,7 +56,10 @@ public class GameManager_PvP : MonoBehaviour
 
         UpdatePointsUI();
     }
-
+    public static void ResetStatic()
+    {
+        currentTurn = PlayerRole.X;
+    }
     public void OnClick(int positionIndex)
     {
         Button clickedButton = buttons[positionIndex];

@@ -36,7 +36,7 @@ public class SceneLoader : MonoBehaviour
     }
     public void restartLevel()
     {
-
+        GameStateResetter.ResetAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
@@ -56,7 +56,7 @@ public static class GameStateResetter
         else if (scene == "PvP")
         {
             RoundManagerPvP.ResetState();
-            
+            GameManager_PvP.ResetStatic();
         }
     }
 
