@@ -98,4 +98,17 @@ public class RoundManager : MonoBehaviour
         timeLeft = turnTime;
         timerText.text = Mathf.Ceil(timeLeft).ToString() + "s";
     }
+    public static void ResetState()
+    {
+        isPlayerTurn = true;
+
+        if (Instance != null)
+        {
+            Instance.StopAllCoroutines();
+            Instance.timerText.text = ""; 
+            Instance.turnText.text = "";  
+        }
+
+        Instance = null;
+    }
 }

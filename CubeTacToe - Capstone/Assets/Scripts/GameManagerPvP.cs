@@ -78,13 +78,13 @@ public class GameManager_PvP : MonoBehaviour
             return;
         }
 
-        RoundManager_PvP.Instance.EndTurn();
+        RoundManagerPvP.Instance.EndTurn();
 
     }
     public void SwitchTurnManually()
     {
         currentTurn = (currentTurn == PlayerRole.X) ? PlayerRole.O : PlayerRole.X;
-        RoundManager_PvP.Instance.SetTurnText(currentTurn);
+        RoundManagerPvP.Instance.SetTurnText(currentTurn);
     }
 
     private void ShowImage(Button button, PlayerRole role)
@@ -221,8 +221,4 @@ public class GameManager_PvP : MonoBehaviour
             winnerText.text = "It's a Tie!";
     }
 
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
 }

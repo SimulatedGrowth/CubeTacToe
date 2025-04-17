@@ -69,6 +69,10 @@ public class GameManager : MonoBehaviour
         CheckLineup();
         UpdatePointsUI();
     }
+    public static void ResetStatic()
+    {
+        firstAssignedRole = PlayerRole.None;
+    }
 
     public void ShowEndPanel()
     {
@@ -84,15 +88,6 @@ public class GameManager : MonoBehaviour
             winnerText.text = "It's a Tie!";
     }
 
-    public void restartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
-
-    public void menuLevel()
-    {
-        SceneManager.LoadScene("StartScreen");
-    }
 
     public void AssignRole(PlayerRole role)
     {

@@ -2,9 +2,9 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
-public class RoundManager_PvP : MonoBehaviour
+public class RoundManagerPvP : MonoBehaviour
 {
-    public static RoundManager_PvP Instance { get; private set; }
+    public static RoundManagerPvP Instance { get; private set; }
 
     public TMP_Text timerText;
     public TMP_Text turnText;
@@ -74,5 +74,18 @@ public class RoundManager_PvP : MonoBehaviour
     {
         timeLeft = turnTime;
         timerText.text = Mathf.Ceil(timeLeft).ToString() + "s";
+    }
+    public static void ResetState()
+    {
+        isPlayer1Turn = true;
+
+        if (Instance != null)
+        {
+            Instance.StopAllCoroutines();
+            Instance.timerText.text = "";
+            Instance.turnText.text = "";
+        }
+
+        Instance = null;
     }
 }
