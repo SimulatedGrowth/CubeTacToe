@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public GameObject howToPlayPanel;
     public GameObject ChallengePanel;
     public GameObject bulletModePanel;
+    public GameObject boundedModePanel;
     public Animator animator;
     public Animator animator1;
     public Animator animator2;
@@ -37,6 +38,22 @@ public class UIManager : MonoBehaviour
     {
         hasPlayed1 = false;
         bulletModePanel.SetActive(false);
+        animator2.Rebind();
+        animator2.Update(0f);
+    }
+
+    public void ShowBoundedModePanel()
+    {
+        if (hasPlayed1) return;
+        hasPlayed1 = true;
+        boundedModePanel.SetActive(true);
+        animator2.SetTrigger(animationTrigger);
+
+    }
+    public void HideBoundedModePanel()
+    {
+        hasPlayed1 = false;
+        boundedModePanel.SetActive(false);
         animator2.Rebind();
         animator2.Update(0f);
     }

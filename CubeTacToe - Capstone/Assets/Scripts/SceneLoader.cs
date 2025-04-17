@@ -7,6 +7,7 @@ public class SceneLoader : MonoBehaviour
     public string PvAISceneName = "PvAI";
     public string PvPSceneName = "PvP";
     public string Bullet = "PvB";
+    public string Bounded = "PvL";
 
     public void LoadPvAIScene()
     {
@@ -20,6 +21,10 @@ public class SceneLoader : MonoBehaviour
     public void LoadBulletScene()
     {
         SceneManager.LoadScene(Bullet);
+    }
+    public void LoadBoundedScene()
+    {
+        SceneManager.LoadScene(Bounded);
     }
     public void menuLevel()
     {

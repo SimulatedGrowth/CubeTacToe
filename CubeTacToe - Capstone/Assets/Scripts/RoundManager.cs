@@ -63,14 +63,15 @@ public class RoundManager : MonoBehaviour
         {
             string sceneName = SceneManager.GetActiveScene().name;
 
-            if (sceneName == "PvAI")
-            {
-                Instance.Invoke("AITurn", 1.7f);
-            }
             if (sceneName == "PvB")
             {
                 Instance.Invoke("AITurn", 0.5f);
             }
+            else
+            {
+                Instance.Invoke("AITurn", 1.7f);
+            }
+            
         }
     }
 

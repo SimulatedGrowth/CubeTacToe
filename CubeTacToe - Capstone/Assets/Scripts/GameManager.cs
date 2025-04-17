@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour
 
     public AudioSource audio;
 
+    public int maxMoves = 54;
+
     public enum PlayerRole { None, X, O }
     private PlayerRole assignedRole = PlayerRole.None;
     private static PlayerRole firstAssignedRole = PlayerRole.None;
@@ -31,6 +33,7 @@ public class GameManager : MonoBehaviour
     private int playerPoints = 0;
     private int aiPoints = 0;
     private int moves;
+    
 
     private int lastPlayerMarkIndex = -1;
     private int lastAIMarkIndex = -1;
@@ -109,7 +112,7 @@ public class GameManager : MonoBehaviour
         audio.Play();
 
         moves++;
-        if (moves >= (54) && availableButtons.Count == 0)
+        if (moves >= (maxMoves))
         {
             endpanel.SetActive(true);
             ShowEndPanel();
@@ -173,7 +176,7 @@ public class GameManager : MonoBehaviour
         audio.Play();
 
         moves++;
-        if (moves >= (54) && availableButtons.Count == 0)
+        if (moves >= (maxMoves))
         {
             endpanel.SetActive(true);
             ShowEndPanel();
